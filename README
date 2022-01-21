@@ -1,1 +1,14 @@
-Ansible Script for Mediawiki installation : mediawiki-ansible/roles/tasks/main.yml
+AUTOMATING DEPLOYMENT OF MEDIAWIKI ON GCP
+
+To build the custom image, execute the ansible script "mediawiki-ansible/roles/tasks/main.yml"
+
+Create compute instance and the components associated with it.
+    VM instance : "main.tf"
+    instance group module : "modules/instance-group"
+    ip-address module : "modules/ip-address"
+
+Run the following terraform commands to create the resource :
+$ terraform init
+$ terraform plan
+$ terraform apply
+
